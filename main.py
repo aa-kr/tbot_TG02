@@ -38,7 +38,6 @@ async def start(message: Message):
 async def aitext(message: Message):
     await message.answer('Искусственный интеллект — это свойство искусственных интеллектуальных систем выполнять творческие функции, которые традиционно считаются прерогативой человека; наука и технология создания интеллектуальных машин, особенно интеллектуальных компьютерных программ')
 
-# Обработчик текстовых сообщений для перевода на английский
 @dp.message(F.text)
 async def handle_text(message: Message):
     text_to_translate = message.text
